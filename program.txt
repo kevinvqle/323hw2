@@ -1,4 +1,4 @@
-```class Parser:
+class Parser:
     def __init__(self, parsing_table, grammar):
         self.parsing_table = parsing_table
         self.grammar = grammar
@@ -104,5 +104,3 @@ test_strings = ["( id + id ) * id $", "id * id $", "( id * ) $"]
 for string in test_strings:
     print(f"\nParsing string: {string}")
     parser.parse(string)
-
-```
